@@ -11,7 +11,9 @@ function Student() {
     var view;
     switch (page) {
       case "list":
-        view = <StudentList setPage={setPage} setRow={setRow} />;
+        view = (
+          <StudentList title={"Teacher"} setPage={setPage} setRow={setRow} />
+        );
         break;
       case "create":
         view = <StudentForm setPage={setPage} row={row} />;
